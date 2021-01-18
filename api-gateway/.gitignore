@@ -1,2 +1,5 @@
 # External packages
-node_modules
+node_modules/
+
+# Config files
+default.json
