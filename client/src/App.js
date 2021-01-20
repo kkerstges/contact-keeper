@@ -4,9 +4,11 @@ import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import { Fragment } from 'react';
+import Register from './components/auth/Register';
 
 import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
+import Login from './components/auth/Login';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
+                <Route exact path='/register' component={Register} />
+                <Route exact path='/login' component={Login} />
               </Switch>
             </div>
           </Fragment>
